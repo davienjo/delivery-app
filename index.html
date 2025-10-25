@@ -3,21 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
     <title>Delivery app</title>
   </head>
   <body>
     <header>
       <!-- NAV section Starts here -->
-      <nav>
-        <div class="left-section"><img src="" alt="Bee club" />BeeClub</div>
+      <nav class="nav">
+        <div class="left-section">
+          <img class="phone-img" src="images/logo.png" alt="Bee club" />BeeClub
+        </div>
 
         <ul class="middle-section">
-          <li>For Customers</li>
-          <li>For couriers</li>
-          <li>About</li>
+          <li><a href="">For Customers</a></li>
+          <li><a href="">For couriers</a></li>
+          <li><a href="">About</a></li>
         </ul>
         <div class="right-section">
-          <img src="" alt="English-UK" />
+          <img src="images/united_kingdom_round_icon_64.png" alt="English-UK" />
+
           <form action="" method="get">
             <label for="language">English<br />(ENG)</label>
             <select name="language" id="language">
@@ -26,7 +39,8 @@
           </form>
           <div class="download-section">
             <a href="">Download app now</a>
-            <img src="" alt="arrow" />
+            <!-- <img src="images/arrow-forward-outline.svg" alt="arrow" /> -->
+             <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
         </div>
       </nav>
@@ -46,28 +60,30 @@
         </div>
 
         <div class="download-section">
-          <a href="">GET 20% off now (3 days left)</a>
-          <a href=""><img src="" alt="arrow" />Learn More</a>
+          <a href="">get 20% off now(3 days left)</a>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <p class="download-section-p">Learn More</p>
         </div>
 
         <div class="stats">
-          <p><span>12.5K+</span><br />User Registered</p>
-          <p><span>10+</span><br />Jeddah Zones</p>
-          <p><span>4.9</span><br />App Rating</p>
+          <p><span class="numbers">12.5K+</span><br />User Registered</p>
+          <p><span class="numbers">10+</span><br />Jeddah Zones</p>
+          <p><span class="numbers">4.9</span><br />App Rating</p>
         </div>
       </div>
 
-      <div class="hero-right-section">
-        <div class="hero-img">
-          <img src="" alt="delivery-mockup" />
-        </div>
+      <!-- <div class="hero-right-section"> -->
+      <div class="hero-img">
+        <img src="images/iphone-15-pro.png" alt="delivery-mockup" />
         <div class="blob-1">
           <img src="" alt="icon" width="40px" />
+
           <div class="blob-1-text">
-            <p>27K+</p>
+            <p>50K+</p>
             <p>Monthly Orders</p>
           </div>
         </div>
+
         <div class="blob-2">
           <div class="blob2-icons">
             <img src="" alt="" />
@@ -75,8 +91,9 @@
             <img src="" alt="" />
           </div>
           <h2>GET THE APP</h2>
-          <p>Download our app $ enjoy<br />our services now.</p>
-          <h3>DOWNLOAD NOW</h3>
+          <p>Download our app & enjoy<br />our services now.</p>
+          <p>DOWNLOAD NOW</p>
+          <!-- <img src="images/arrow-forward-outline.svg" alt="right-arrow" class="arrow" > -->
         </div>
       </div>
     </section>
@@ -85,19 +102,22 @@
 
     <!-- FEATURES SECTION -->
     <section class="features">
-      <button>What is BeePlus?</button>
+      <p class="section-heading">What is BeePlus?</p>
 
-      <h2>INSTANT DELIVERY SOLUTION<br>SPECIAL FOR YOU IN JEDDAH</h2>
-      <video src=""></video>
-      <p>
+      <p class="big-text">INSTANT DELIVERY SOLUTION<br>SPECIAL FOR YOU IN JEDDAH</p>
+      <video src="images/0_Woman_Packing_3840x2160.mp4" controls loop muted >Woman packing for delivery</video>
+      <div class="video-details">
+        <p class="details">
         BeeClub delivers anything across Jeddah.Book in the app, track your
         order, get it delivered today.<br />We work 24/7. Price based on
         loading/unloading time. Drivers are verified.
       </p>
       <div class="download-section">
-        <a href="">Explore more our features</a>
-        <img src="" alt="arrow" />
-      </div>
+            <a href="">Explore more our features</a>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+      
     </section>
     <!-- features section ends here -->
 
@@ -105,7 +125,7 @@
 
     <section class="service-section">
       <div class="service-left">
-        <a href=""><img src="" alt="" />What is our services?</a>
+        <p class="service-heading"> What is our services</p>
         <h2>Choose your delivery<br>Service type</h2>
 
         <div class="form">
@@ -116,7 +136,7 @@
             <option value=""></option>
           </select>
           <label for="courier"
-            ><img src="" alt="" />Bike Courier<br>Parcels up to 10kg</label
+            ><img src="" alt="" />Bike Courier<br />Parcels up to 10kg</label
           >
           <select name="service" id="courier">
             <option value=""></option>
@@ -127,14 +147,14 @@
           </select>
 
           <label for="pickup"
-            ><img src="" alt="" />Pickup<br>Parcels up to 500kg</label
+            ><img src="" alt="" />Pickup<br />Parcels up to 500kg</label
           >
           <select name="service" id="pickup">
             <option value=""></option>
           </select>
 
           <label for="car"
-            ><img src="" alt="" />Car<br>Parcels up to 20kg</label
+            ><img src="" alt="" />Car<br />Parcels up to 20kg</label
           >
           <select name="service" id="car">
             <option value=""></option>
@@ -143,7 +163,7 @@
       </div>
 
       <div class="service-right">
-        <img src="" alt="" />
+        <img src="images/hero-image.png" alt="" />
         <!-- to add background later -->
       </div>
     </section>
@@ -151,103 +171,120 @@
     <!-- Features section ends here -->
 
     <!-- BENEFITS SECTION -->
+
     <section class="benefits">
-      <a href="">Waht the benefits of BeePlus?</a>
-      <h2>BEECLUB DELIVERY<br>ADVANTAGE</h2>
-
-      <div class="features-left">
-        <div class="card">
+    <p class="benefits-heading">What's the benefits of BeePlus?</p>
+    <h2 class="benefits-h2">BEECLUB DELIVERY<br />ADVANTAGE</h2>
+      
+    <div class="benefits-section">
+      <div class="benefits-left">
+        <div class="card card-1">
           <img src="" alt="dollar-sign" />
-          <h2>Transparent Pricing</h2>
+          <h3>Transparent Pricing</h3>
           <p>
-            See the exact cost before<br>
-            booking. Pay only for the time<br>
+            See the exact cost before<br />
+            booking. Pay only for the time<br />
             you use. No hidden fees.
           </p>
         </div>
 
-        <div class="card">
+        <div class="card card-2">
           <img src="" alt="dollar-sign" />
-          <h2>Transparent Pricing</h2>
+          <h3>Same-Day Service</h3>
           <p>
-            See the exact cost before<br>
-            booking. Pay only for the time<br>
-            you use. No hidden fees.
+            Urgent delivery or moving<br />
+            today? Express documents to<br />
+            full relocations-done<br />
+            within hours
           </p>
         </div>
 
-        <div class="card">
+        <div class="card card-3">
           <img src="" alt="dollar-sign" />
-          <h2>Transparent Pricing</h2>
+          <h3>Transparent Pricing</h3>
           <p>
-            See the exact cost before<br>
-            booking. Pay only for the time<br>
-            you use. No hidden fees.
-          </p>
-        </div>
-      </div>
-
-      <div class="features-center">
-        <img src="" alt="" />
-      </div>
-
-      <div class="features-right">
-        <div class="card">
-          <img src="" alt="dollar-sign" />
-          <h2>Transparent Pricing</h2>
-          <p>
-            See the exact cost before<br>
-            booking. Pay only for the time<br>
-            you use. No hidden fees.
-          </p>
-        </div>
-
-        <div class="card">
-          <img src="" alt="dollar-sign" />
-          <h2>Transparent Pricing</h2>
-          <p>
-            See the exact cost before<br>
-            booking. Pay only for the time<br>
-            you use. No hidden fees.
-          </p>
-        </div>
-
-        <div class="card">
-          <img src="" alt="dollar-sign" />
-          <h2>Transparent Pricing</h2>
-          <p>
-            See the exact cost before<br>
-            booking. Pay only for the time<br>
-            you use. No hidden fees.
+            Our system the fastest route<br />
+            booking.Pay only for the time<br />
+            you use.No hidden fees.
           </p>
         </div>
       </div>
 
+      <div class="benefits-center">
+        <img src="images/hero-image.png" alt="">
+      </div>
+
+      <div class="benefits-right">
+        <div class="card card-4">
+          <img src="" alt="dollar-sign" />
+          <h3>24/7 Availability</h3>
+          <p>
+            Order anytime. we work round<br />
+            the clock across all jeddah<br />
+            districts.
+          </p>
+        </div>
+
+        <div class="card card-5">
+          <img src="" alt="dollar-sign" />
+          <h3>Professional Drivers</h3>
+          <p>
+            All drivers are verified and<br />
+            trained. Background checks<br />
+            comppleted. Your items are<br />
+            safe.
+          </p>
+        </div>
+
+        <div class="card card-6">
+          <img src="" alt="dollar-sign" />
+          <h3>Flexible Payment Options</h3>
+          <p>
+            Pay by card in the app or cash<br />
+            to the driver. Choose what<br />
+            works for you.
+          </p>
+        </div>
+      </div>
       <div class="download-section">
-        <a href="">Explore more our features</a>
-        <img src="" alt="arrow" />
-      </div>
+            <a href="">Explore More our features</a>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+    </div>
     </section>
-    <!-- Features section ends here -->
+    <!-- benefits section ends here -->
 
     <!-- TESTIMONIAL SECTION -->
 
     <section class="testimonials">
       <!-- quotation marks -->
-      &ldquo;
-      <p>
-        &ldquo;ordered pickup from ikea. Team<br>
-        laoded everything, delivered, and<br>
+      
+      <p class="quote-mark">&ldquo;</p>
+
+      <p class="testimonial-p">
+        &ldquo;ordered pickup from ikea. Team<br />
+        laoded everything, delivered, and<br />
         helped unload. worth every riyal.&rdquo;
       </p>
 
       <div class="testimonial-below">
-        <img src="" alt="" />
+        <div class="test-details">
+        <img src="images/host.png" alt="" />
+        <div class="test-details-1">
         <p>Oman Khali</p>
         <p>Passenger of Jedidah Residence</p>
+        </div>
+        
+      </div>
+        
 
         <div class="arrows">
           <!-- icons for arrows -->
+
+           <ion-icon name="arrow-back-outline"></ion-icon>
+           <ion-icon name="arrow-forward-outline"></ion-icon>
+
+           
         </div>
       </div>
     </section>
@@ -257,10 +294,10 @@
     <!-- FAQ SECTION -->
     <section class="faq-section">
       <div class="faq-left">
-        <a href=""><img src="" alt="" />Ask us questions</a>
+        <p>Ask us questions</p>
         <h2>Frequently asked questions</h2>
         <p>
-          Reviews forom Jeddah Residents who<br>
+          Reviews forom Jeddah Residents who<br />
           use BeeClub Daily.
         </p>
       </div>
@@ -275,19 +312,22 @@
 
     <section class="cta-section">
       <div class="cta-left">
-        <a href=""><img src="" alt="up=arrow" />Get started now</a>
+        <a  class="cta-btn"><ion-icon name="arrow-up-outline"></ion-icon>Get Started Now</a>
         <h2>your shipping<br />service in jeddah</h2>
         <p>
-          BeeClum delivers anything across Jeddah.Book in the app, track your<br>
+          BeeClum delivers anything across Jeddah.Book in the app, track your<br />
           order, get it delivered today. We worked 24/7. Price based on
           loading/<br />
           unloading time. Drivers are verified.
         </p>
 
-        <div class="download-section">
-          <a href="">Download app now</a>
-          <img src="" alt="arrow" />
-        </div>
+       <div class="cta-download-section">
+          <a class="cta-download" href="">Download app now</a>
+          <ion-icon class="cta-arrow" name="arrow-forward-outline"></ion-icon>
+          </div>
+          
+          
+       
       </div>
       <div class="cta-right">
         <img src="" alt="" />
@@ -299,92 +339,86 @@
     <!-- cta section ends here -->
 
     <!-- FOOTER SECTION -->
+<section class="footer">
+  <div class="first-row">
+    <div class="content">
+      <h2>
+        Your instant delivery<br />
+        solution in Jeddah
+      </h2>
+    </div>
 
-    <section class="footer">
-      <div class="first-row">
-        <div class="content">
-          <img src="" alt="" />BeeClub
-          <h2>
-            Your instant delivery<br>
-            solution in jeddah
-          </h2>
-        </div>
-        <div class="links">
-          <div class="div-1">
-            <h3>Navigation</h3>
-            <ul>
-              <li><a href="">For customers</a></li>
-              <li><a href="">For Couriers</a></li>
-              <li><a href="">About</a></li>
-            </ul>
-          </div>
-          <div class="div-2"></div>
-          <h3>Our support</h3>
-          <ul>
-            <li><a href="">Contact us</a></li>
-            <li><a href="">FAQ's</a></li>
-          </ul>
+    <div class="links">
+      <div class="div-1">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="">For customers</a></li>
+          <li><a href="">For couriers</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+
+      <div class="div-2">
+        <h3>Our support</h3>
+        <ul>
+          <li><a href="">Contact us</a></li>
+          <li><a href="">FAQ’s</a></li>
+        </ul>
+      </div>
+    </div> 
+  </div> 
+
+  <div class="second-row">
+    <div class="applications">
+      <div class="appstore">
+        <img src="" alt="app-store" />
+        <div class="app-content">
+          <p>Download on the <br />App Store</p>
         </div>
       </div>
 
-      <div class="second-row">
-        <div class="applications">
-          <div class="appstore">
-            <img src="" alt="app-store" />
-            <div class="app-content">
-              <p>
-                download on the <br>
-                App Store
-              </p>
-            </div>
-          </div>
-
-          <div class="google-play">
-            <img src="" alt="google-play" />
-            <div class="app-content">
-              <p>
-                GET IT ON<br>
-                Google Play
-              </p>
-            </div>
-          </div>
-
-          <div class="appgallery">
-            <img src="" alt="app-gallery" />
-            <div class="app-content">
-              <p>
-                Explore it on<br>
-                AppGallery
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="icons">
-          <div class="customer-icons">
-            <h3>For customers</h3>
-            <!-- icons here -->
-          </div>
-          <div class="partner-icons">
-            <h3>For Partner</h3>
-            <!-- icons here -->
-          </div>
-        </div>
-
-        <div class="third-row">
-          &#64;2025 BeePlus all rights reserved.
-
-          <div class="third-row-links">
-            <a href="">Privacy policy</a>
-            <a href="">Terms of service</a>
-          </div>
+      <div class="google-play">
+        <img src="" alt="google-play" />
+        <div class="app-content">
+          <p>GET IT ON<br>Google Play</p>
         </div>
       </div>
 
-      <div class="fourth-row">
-        <img src="" alt="" />
-        <h2>BeeClub</h2>
+      <div class="appgallery">
+        <img src="" alt="app-gallery" />
+        <div class="app-content">
+          <p>Explore it on<br />AppGallery</p>
+        </div>
       </div>
-    </section>
-  </body>
+    </div>
+
+    <div class="icons">
+      <div class="customer-icons">
+        <h3>For customers</h3>
+        <!-- icons here -->
+      </div>
+      <div class="partner-icons">
+        <h3>For partners</h3>
+        <!-- icons here -->
+      </div>
+    </div>
+  </div> 
+
+  <div class="third-row">
+    <p>&#64;2025 BeePlus — All rights reserved.</p>
+    <div class="third-row-links">
+      <a href="">Privacy policy</a>
+      <a href="">Terms of service</a>
+    </div>
+  </div>
+
+  <div class="fourth-row">
+    <img src="" alt="BeeClub logo" />
+    <h2>BeeClub</h2>
+  </div>
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
