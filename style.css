@@ -57,7 +57,7 @@ body {
 .middle-section {
   display: flex;
   gap: 2rem;
-  background-color: var(--color-neutral);
+  background-color: #363325;
   border-radius: 20px;
   padding-inline: 2rem;
   padding-block: 0.5rem;
@@ -80,9 +80,12 @@ a {
   justify-content: center;
   align-items: center;
 }
-form label {
-  color: var(--color-light);
-  margin-right: 1rem;
+
+.right-section p{
+    color: var(--color-light);
+}
+.right-section i{
+    color: var(--color-primary-dark);
 }
 .download-section {
   display: flex;
@@ -101,12 +104,13 @@ form label {
   display: inline-block;
 }
 
-.download-section img {
-  width: 40px;
+.nav-forward  {
+  padding:0.8rem;
   background-color: var(--color-primary);
   border-radius: 50%;
-  margin-left: -8px;
+  margin-left: -5px;
   display: inline-block;
+  
 }
 
 /* HERO SECTION */
@@ -128,6 +132,7 @@ form label {
   gap: 2rem;
   color: var(--color-light);
   flex: 1;
+  position: relative;
 }
 
 .download-section-p {
@@ -162,6 +167,8 @@ form label {
   width: 100%;
   max-width: 350px;
   height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 .blob-1 {
   background-color: var(--color-light);
@@ -173,6 +180,11 @@ form label {
   left: 50px;
   z-index: 2;
   padding: 1rem;
+  color:var(--color-dark);
+}
+
+.blob-1 i{
+    color: var(--color-primary);
 }
 .blob-1 p:first-child {
   font-size: 3rem;
@@ -181,6 +193,28 @@ form label {
 }
 .blob-1 p:last-child {
   color: var(--color-text-gray);
+}
+
+.h1-blob{
+    display: flex;
+    background-color: var(--color-primary);
+    justify-content:space-evenly;
+    gap:0.5rem;
+    border-radius: 30px;
+    position:absolute;
+    top:15%;
+    left:50%;
+    padding:0.5rem;
+}
+.h1-blob p{
+    font-size: 0.8rem;
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+.h1-blob img{
+    width:30px;
+    border-radius: 20px;
 }
 
 .blob-2 {
@@ -198,20 +232,23 @@ form label {
   text-transform: uppercase;
   color: var(--color-dark);
 }
-.blob-2 p {
+.blob-2 .instructions {
   color: var(--color-neutral);
   font-size: 14px;
 }
 
-.blob-2 p:last-child {
+.blob-2 .action{
   font-weight: 700;
-  color: #060504;
+  color: var(--color-dark);
   letter-spacing: -1px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .blob-2.arrow {
   height: 40px;
   display: inline-block;
+}
+.blob2-icons img{
+    width:30px;
 }
 
 /* FEATURES SECTION */
@@ -272,7 +309,9 @@ form label {
   justify-items: center;
   align-items: center;
   margin-block: 10rem;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
+  gap:4rem;
+  color:var(--color-light);
 }
 
 .service-heading {
@@ -284,16 +323,93 @@ form label {
   margin-bottom: 4rem;
   max-width: 200px;
   font-size: 0.8rem;
-  margin: 1.5rem auto;
+  margin-left:2rem;
+  margin-top: 2rem;
   font-weight: 600;
   text-align: center;
+  
 }
 
 .service-right img {
   max-width: 450px;
   height: 450px;
   width: 100%;
+  border-radius: 20px;
 }
+
+.service-left{
+    display: flex;
+    flex-direction: column;
+    
+    width:100%;
+}
+
+.service-section h2{
+    font-size: 2.2rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+
+
+.service-section .form{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    padding:2rem;
+    border-radius: 15px;
+    /* background-color: #222; */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.form-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form label{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    font-weight: 600;
+
+}
+.form label img{
+    width:40px;
+    height:40px;
+    object-fit: cover;
+
+}
+.form select{
+  background-color: #1a1a1a;
+  color: var(--color-primary-dark);
+  border:none;
+  outline: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  width:5px;
+  height:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form select:hover,
+.form select:focus {
+  border-color: var(--color-primary);
+  background-color: #111;
+}
+.form label i{
+    font-size: 2rem;
+    color: var(--color-primary-dark);
+
+}
+
+
+
 
 /* BENEFITS SECTION */
 .benefits-heading {
@@ -310,18 +426,38 @@ form label {
   text-align: center;
 }
 
-.benefits-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  margin-block: 5rem;
+.benefits {
+  position: relative;
+  background: #111;
+  color: var(--color-light);
+  padding: 6rem 0;
+  text-align: center;
+  overflow: hidden;
 }
+
+.benefits-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-center {
+  position: relative;
+  z-index: 5;
+}
+
 .benefits-center img {
   max-width: 400px;
-  height: 450px;
+  height: 600px;
   width: 100%;
   object-fit: cover;
+  border-radius: 30px;
+  position: relative;
+  z-index: 10;
 }
 .benefits-h2 {
   color: var(--color-light);
@@ -331,23 +467,95 @@ form label {
   letter-spacing: -1px;
 }
 
+/* RINGS */
+.yellow-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.3) 0%,
+    transparent 70%
+  );
+  z-index: 1;
+}
+
+.yellow-ring.outer {
+  width: 600px;
+  height: 600px;
+  opacity: 0.2;
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.2) 0%,
+    transparent 80%
+  );
+  z-index: 0;
+}
+.card i{
+    font-size:2rem;
+    color: var(--color-primary-dark);
+    
+    
+    
+}
+
 .card {
+  position: absolute;
   background-color: #1a1a1a;
   margin-bottom: 1rem;
   border-radius: 10px;
   padding: 20px 20px;
   color: var(--color-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  text-align: start;
 }
+.card:hover {
+  transform: translateY(-5px);
+}
+
 .card h3 {
   font-size: 1.2rem;
+  margin-block: 0.5rem;
 }
 .card p {
   font-size: 0.9rem;
 }
 
-.benefits-section .download-section {
-  display: flex;
-  justify-content: flex-end;
+/* LEFT SIDE */
+.card-1 {
+  top: 1%;
+  left: 10%;
+}
+.card-2 {
+  top: 40%;
+  left: 5%;
+  transform: translateX(-20px);
+}
+.card-3 {
+  top: 80%;
+  left: 10%;
+  transform: translateX(-40px);
+}
+
+/* RIGHT SIDE */
+.card-4 {
+  top: 1%;
+  right: 10%;
+}
+.card-5 {
+  top: 40%;
+  right: 5%;
+  transform: translateX(20px);
+}
+.card-6 {
+  top: 80%;
+  right: 10%;
+  transform: translateX(40px);
 }
 
 /* TESTIMONIAL SECTION */
@@ -411,6 +619,7 @@ form label {
   padding-inline: 5rem;
   color: var(--color-light);
   margin-block: 10rem;
+  gap: 3rem;
 }
 
 .faq-left p:first-child {
@@ -434,6 +643,74 @@ form label {
   font-size: 1rem;
 }
 
+/* ACCORDION SECTION */
+
+.accordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* align-items: center; */
+  gap: 1rem;
+}
+.accordion-item {
+  margin-bottom: 10px;
+  /* border:1px solid #ddc; */
+  border-radius: 4px;
+  overflow: hidden;
+  /* background-color: #fff; */
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-header {
+  /* width:100%; */
+  cursor: pointer;
+  text-align: left;
+
+  border: none;
+  outline: none;
+
+  font-weight: 600;
+  position: relative;
+  font-size: 0.8rem;
+  padding: 1rem 1.5rem;
+  background-color: #1a1a1a;
+  color: var(--color-light);
+}
+
+.accordion-header:hover {
+  background-color: #525151;
+}
+.accordion-header::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  color: #f1c40f;
+  margin-top: -10px;
+}
+.accordion-header.active::after {
+  content: "-";
+}
+
+.accordion-content {
+  background-color: var(--color-dark);
+  /* border:1px solid #ddd; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1.5rem;
+}
+
+.accordion-content p {
+  margin: 1rem 0;
+}
+
+.accordion-content.open {
+  max-height: 200px;
+  padding: 1rem 1.5rem;
+}
 /* CTA SECTION */
 .cta-section {
   display: flex;
@@ -506,6 +783,17 @@ form label {
   height: 42px;
 }
 
+.cta-right{
+    flex:1;
+
+}
+
+.cta-right img{
+    width:30%;
+    border-radius: 10px;
+    
+}
+
 /* FOOTER SECTION */
 .first-row {
   display: flex;
@@ -549,34 +837,50 @@ form label {
 .second-row {
   display: flex;
   justify-content: space-between;
-  background-color: green;
+  /* background-color: green; */
   padding-inline: 3rem;
   margin-bottom: 2rem;
 }
 
 .applications {
   display: flex;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 0.5rem;
 }
 
 .app-content p {
   color: var(--color-light);
+  font-size: 0.9rem;
 }
 
 .appstore,
 .google-play,
-.app-gallery {
+.appgallery {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  border: 2px solid var(--color-gray);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.appstore img,
+.google-play img,
+.appgallery img {
+  width: 30px;
 }
 
 .icons {
   display: flex;
   gap: 4rem;
   color: var(--color-light);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: var(--color-primary-dark);
+}
+
+.icons h3 {
+  color: var(--color-light);
 }
 /* third row */
 
@@ -599,13 +903,24 @@ form label {
 }
 
 /* Fourth row */
-.fourth-row{
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 3rem;
+.fourth-row {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
 }
-.fourth-row h2{
-    color: var(--color-primary-dark);
-    font-size:12rem;
-    font-weight: 300;
+.fourth-row h2 {
+  color: var(--color-primary-dark);
+  font-size: 12rem;
+  font-weight: 300;
+  flex: 1;
+}
+.fourth-row-img {
+  flex: 1;
+}
+
+.fourth-row-img img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  background-image: none;
 }

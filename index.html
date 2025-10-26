@@ -9,7 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media-queries.css" />
@@ -20,7 +23,7 @@
       <!-- NAV section Starts here -->
       <nav class="nav">
         <div class="left-section">
-          <img class="phone-img" src="images/logo.png" alt="Bee club" />BeeClub
+          <img class="phone-img" src="images/logo-dark.png" alt="Bee club" />BeeClub
         </div>
 
         <ul class="middle-section">
@@ -31,16 +34,12 @@
         <div class="right-section">
           <img src="images/united_kingdom_round_icon_64.png" alt="English-UK" />
 
-          <form action="" method="get">
-            <label for="language">English<br />(ENG)</label>
-            <select name="language" id="language">
-              <option value=""></option>
-            </select>
-          </form>
+          <p>English<br>(ENG)</p>
+          <i class="fa-solid fa-angle-down"></i>
+          
           <div class="download-section">
             <a href="">Download app now</a>
-            <!-- <img src="images/arrow-forward-outline.svg" alt="arrow" /> -->
-             <ion-icon name="arrow-forward-outline"></ion-icon>
+            <ion-icon class="nav-forward" name="arrow-forward-outline"></ion-icon>
           </div>
         </div>
       </nav>
@@ -61,9 +60,21 @@
 
         <div class="download-section">
           <a href="">get 20% off now(3 days left)</a>
-          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <ion-icon class="nav-forward" name="arrow-forward-outline"></ion-icon>
           <p class="download-section-p">Learn More</p>
         </div>
+
+        <!-- social users blob -->
+<div class="h1-blob">
+<div><img src="images/host.png" alt=""></div>
+<div> 
+  <p>50K+</p>
+  <p>Total users</p>
+</div>
+
+
+</div>
+
 
         <div class="stats">
           <p><span class="numbers">12.5K+</span><br />User Registered</p>
@@ -74,9 +85,9 @@
 
       <!-- <div class="hero-right-section"> -->
       <div class="hero-img">
-        <img src="images/iphone-15-pro.png" alt="delivery-mockup" />
+        <img src="images/iphone-2.png" alt="delivery-mockup" />
         <div class="blob-1">
-          <img src="" alt="icon" width="40px" />
+          <i class="fa-solid fa-people-group"></i>
 
           <div class="blob-1-text">
             <p>50K+</p>
@@ -86,14 +97,14 @@
 
         <div class="blob-2">
           <div class="blob2-icons">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src="images/apple_831329.png" alt="" />
+            <img src="images/google-play_2504916.png" alt="" />
+            <img src="images/menu_4518101.png" alt="" />
           </div>
           <h2>GET THE APP</h2>
-          <p>Download our app & enjoy<br />our services now.</p>
-          <p>DOWNLOAD NOW</p>
-          <!-- <img src="images/arrow-forward-outline.svg" alt="right-arrow" class="arrow" > -->
+          <p class="instructions">Download our app & enjoy<br />our services now.</p>
+          <p class="action">DOWNLOAD NOW</p>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
       </div>
     </section>
@@ -104,20 +115,23 @@
     <section class="features">
       <p class="section-heading">What is BeePlus?</p>
 
-      <p class="big-text">INSTANT DELIVERY SOLUTION<br>SPECIAL FOR YOU IN JEDDAH</p>
-      <video src="images/0_Woman_Packing_3840x2160.mp4" controls loop muted >Woman packing for delivery</video>
+      <p class="big-text">
+        INSTANT DELIVERY SOLUTION<br />SPECIAL FOR YOU IN JEDDAH
+      </p>
+      <video src="images/0_Woman_Packing_3840x2160.mp4" controls loop muted>
+        Woman packing for delivery
+      </video>
       <div class="video-details">
         <p class="details">
-        BeeClub delivers anything across Jeddah.Book in the app, track your
-        order, get it delivered today.<br />We work 24/7. Price based on
-        loading/unloading time. Drivers are verified.
-      </p>
-      <div class="download-section">
-            <a href="">Explore more our features</a>
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
+          BeeClub delivers anything across Jeddah.Book in the app, track your
+          order, get it delivered today.<br />We work 24/7. Price based on
+          loading/unloading time. Drivers are verified.
+        </p>
+        <div class="download-section">
+          <a href="">Explore more our features</a>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
-      
+      </div>
     </section>
     <!-- features section ends here -->
 
@@ -125,45 +139,56 @@
 
     <section class="service-section">
       <div class="service-left">
-        <p class="service-heading"> What is our services</p>
-        <h2>Choose your delivery<br>Service type</h2>
+        <p class="service-heading">What is our services</p>
+        <h2>Choose your delivery<br />Service type</h2>
 
         <div class="form">
-          <label for="truck"
-            ><img src="" alt="" />Truck<br />Furniture $ large items</label
-          >
-          <select name="service" id="truck">
-            <option value=""></option>
-          </select>
-          <label for="courier"
-            ><img src="" alt="" />Bike Courier<br />Parcels up to 10kg</label
-          >
-          <select name="service" id="courier">
-            <option value=""></option>
-            <option value="">10 min free wait</option>
-            <option value="">Door-to-door</option>
-            <option value="">Eco-friendly</option>
-            <option value="">Up to 10kg</option>
-          </select>
+          <div class="form-item">
+            <label for="truck"
+              ><i class="fa-solid fa-truck"></i>Truck<br />Furniture $ large
+              items</label
+            >
+            <select name="service" id="truck">
+              <option value=""></option>
+            </select>
+          </div>
 
-          <label for="pickup"
-            ><img src="" alt="" />Pickup<br />Parcels up to 500kg</label
-          >
-          <select name="service" id="pickup">
-            <option value=""></option>
-          </select>
+          <div class="form-item">
+            <label for="courier"
+              ><i class="fa-solid fa-motorcycle"></i>Bike Courier<br />Parcels
+              up to 10kg</label
+            >
+            <select name="service" id="courier">
+              <option value=""></option>
+              <option value="">10 min free wait</option>
+              <option value="">Door-to-door</option>
+              <option value="">Eco-friendly</option>
+              <option value="">Up to 10kg</option>
+            </select>
+          </div>
 
-          <label for="car"
-            ><img src="" alt="" />Car<br />Parcels up to 20kg</label
-          >
-          <select name="service" id="car">
-            <option value=""></option>
-          </select>
+          <div class="form-item">
+            <label for="pickup"
+              ><i class="fa-solid fa-truck-pickup"></i>Pickup<br />Parcels up to
+              500kg</label
+            >
+            <select name="service" id="pickup">
+              <option value=""></option>
+            </select>
+          </div>
+
+          <div class="form-item">
+            <label for="car"
+              ><i class="fa-solid fa-car"></i>Car<br />Parcels up to 20kg</label
+            >
+            <select name="service" id="car">
+              <option value=""></option>
+            </select>
+          </div>
         </div>
       </div>
-
       <div class="service-right">
-        <img src="images/hero-image.png" alt="" />
+        <img src="images/iphone-3.png" alt="" />
         <!-- to add background later -->
       </div>
     </section>
@@ -173,92 +198,97 @@
     <!-- BENEFITS SECTION -->
 
     <section class="benefits">
-    <p class="benefits-heading">What's the benefits of BeePlus?</p>
-    <h2 class="benefits-h2">BEECLUB DELIVERY<br />ADVANTAGE</h2>
-      
-    <div class="benefits-section">
-      <div class="benefits-left">
-        <div class="card card-1">
-          <img src="" alt="dollar-sign" />
-          <h3>Transparent Pricing</h3>
-          <p>
-            See the exact cost before<br />
-            booking. Pay only for the time<br />
-            you use. No hidden fees.
-          </p>
+      <p class="benefits-heading">What's the benefits of BeePlus?</p>
+      <h2 class="benefits-h2">BEECLUB DELIVERY<br />ADVANTAGE</h2>
+
+      <div class="benefits-wrapper">
+        <div class="benefits-center">
+          <img src="images/delivery-app2.jpg" alt="" />
+          <div class="yellow-ring"></div>
+          <div class="yellow-ring outer"></div>
         </div>
 
-        <div class="card card-2">
-          <img src="" alt="dollar-sign" />
-          <h3>Same-Day Service</h3>
-          <p>
-            Urgent delivery or moving<br />
-            today? Express documents to<br />
-            full relocations-done<br />
-            within hours
-          </p>
-        </div>
+        <div class="benefits-section">
+          <div class="benefits-left">
+            <div class="card card-1">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <h3>Transparent Pricing</h3>
+              <p>
+                See the exact cost before<br />
+                booking. Pay only for the time<br />
+                you use. No hidden fees.
+              </p>
+            </div>
 
-        <div class="card card-3">
-          <img src="" alt="dollar-sign" />
-          <h3>Transparent Pricing</h3>
-          <p>
-            Our system the fastest route<br />
-            booking.Pay only for the time<br />
-            you use.No hidden fees.
-          </p>
-        </div>
-      </div>
+            <div class="card card-2">
+              <i class="fa-solid fa-truck"></i>
+              <h3>Same-Day Service</h3>
+              <p>
+                Urgent delivery or moving<br />
+                today? Express documents to<br />
+                full relocations — done<br />
+                within hours.
+              </p>
+            </div>
 
-      <div class="benefits-center">
-        <img src="images/hero-image.png" alt="">
-      </div>
-
-      <div class="benefits-right">
-        <div class="card card-4">
-          <img src="" alt="dollar-sign" />
-          <h3>24/7 Availability</h3>
-          <p>
-            Order anytime. we work round<br />
-            the clock across all jeddah<br />
-            districts.
-          </p>
-        </div>
-
-        <div class="card card-5">
-          <img src="" alt="dollar-sign" />
-          <h3>Professional Drivers</h3>
-          <p>
-            All drivers are verified and<br />
-            trained. Background checks<br />
-            comppleted. Your items are<br />
-            safe.
-          </p>
-        </div>
-
-        <div class="card card-6">
-          <img src="" alt="dollar-sign" />
-          <h3>Flexible Payment Options</h3>
-          <p>
-            Pay by card in the app or cash<br />
-            to the driver. Choose what<br />
-            works for you.
-          </p>
-        </div>
-      </div>
-      <div class="download-section">
-            <a href="">Explore More our features</a>
-            <ion-icon name="arrow-forward-outline"></ion-icon>
+            <div class="card card-3">
+              <i class="fa-solid fa-microchip"></i>
+              <h3>Transparent Pricing</h3>
+              <p>
+                Our system finds the fastest route.<br />
+                Pay only for the time you use.<br />
+                No hidden fees.
+              </p>
+            </div>
           </div>
-    </div>
+
+          <div class="benefits-right">
+            <div class="card card-4">
+              <i class="fa-solid fa-clock"></i>
+              <h3>24/7 Availability</h3>
+              <p>
+                Order anytime. We work round<br />
+                the clock across all Jeddah<br />
+                districts.
+              </p>
+            </div>
+
+            <div class="card card-5">
+              <i class="fa-solid fa-compass"></i>
+              <h3>Professional Drivers</h3>
+              <p>
+                All drivers are verified and<br />
+                trained. Background checks<br />
+                completed. Your items are safe.
+              </p>
+            </div>
+
+            <div class="card card-6">
+              <i class="fa-solid fa-credit-card"></i>
+              <h3>Flexible Payment Options</h3>
+              <p>
+                Pay by card in the app or cash<br />
+                to the driver. Choose what<br />
+                works for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <div class="download-section">
+      <a href="">Explore More our features</a>
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </div>
+
     <!-- benefits section ends here -->
 
     <!-- TESTIMONIAL SECTION -->
 
     <section class="testimonials">
       <!-- quotation marks -->
-      
+
       <p class="quote-mark">&ldquo;</p>
 
       <p class="testimonial-p">
@@ -269,22 +299,18 @@
 
       <div class="testimonial-below">
         <div class="test-details">
-        <img src="images/host.png" alt="" />
-        <div class="test-details-1">
-        <p>Oman Khali</p>
-        <p>Passenger of Jedidah Residence</p>
+          <img src="images/host.png" alt="" />
+          <div class="test-details-1">
+            <p>Oman Khali</p>
+            <p>Passenger of Jedidah Residence</p>
+          </div>
         </div>
-        
-      </div>
-        
 
         <div class="arrows">
           <!-- icons for arrows -->
 
-           <ion-icon name="arrow-back-outline"></ion-icon>
-           <ion-icon name="arrow-forward-outline"></ion-icon>
-
-           
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
       </div>
     </section>
@@ -304,6 +330,76 @@
 
       <div class="accordion">
         <!-- Accordion here -->
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">How do I book a delivery?</div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                voluptate nisi iusto ea quasi laborum a, cor.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              What payment methods do you accept?
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem animi repellat rem provident quis.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">How is the price calculated?</div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem animi repellat rem provident quis.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">What areas do you cover?</div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem animi repellat rem provident quis.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">Can i track my delivery?</div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem animi repellat rem provident quis.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">What if i need help loading?</div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem animi repellat rem provident quis.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Can i cancel my order?</div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem animi repellat rem provident quis.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- faq section ends here -->
@@ -312,7 +408,9 @@
 
     <section class="cta-section">
       <div class="cta-left">
-        <a  class="cta-btn"><ion-icon name="arrow-up-outline"></ion-icon>Get Started Now</a>
+        <a class="cta-btn"
+          ><ion-icon name="arrow-up-outline"></ion-icon>Get Started Now</a
+        >
         <h2>your shipping<br />service in jeddah</h2>
         <p>
           BeeClum delivers anything across Jeddah.Book in the app, track your<br />
@@ -321,104 +419,122 @@
           unloading time. Drivers are verified.
         </p>
 
-       <div class="cta-download-section">
+        <div class="cta-download-section">
           <a class="cta-download" href="">Download app now</a>
           <ion-icon class="cta-arrow" name="arrow-forward-outline"></ion-icon>
-          </div>
-          
-          
-       
+        </div>
       </div>
       <div class="cta-right">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <!-- <img src="images/ramadan-phones-14-pro-max-front-side.jpg" alt="" /> -->
+         <img src="images/iphone-1.png" alt="">
+         <img src="images/iphone-3.png" alt="">
+         <img src="images/iphone-4.png" alt="">
+        
       </div>
     </section>
 
     <!-- cta section ends here -->
 
     <!-- FOOTER SECTION -->
-<section class="footer">
-  <div class="first-row">
-    <div class="content">
-      <h2>
-        Your instant delivery<br />
-        solution in Jeddah
-      </h2>
-    </div>
+    <section class="footer">
+      <div class="first-row">
+        <div class="content">
+          <h2>
+            Your instant delivery<br />
+            solution in Jeddah
+          </h2>
+        </div>
 
-    <div class="links">
-      <div class="div-1">
-        <h3>Navigation</h3>
-        <ul>
-          <li><a href="">For customers</a></li>
-          <li><a href="">For couriers</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-      </div>
+        <div class="links">
+          <div class="div-1">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="">For customers</a></li>
+              <li><a href="">For couriers</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+          </div>
 
-      <div class="div-2">
-        <h3>Our support</h3>
-        <ul>
-          <li><a href="">Contact us</a></li>
-          <li><a href="">FAQ’s</a></li>
-        </ul>
-      </div>
-    </div> 
-  </div> 
-
-  <div class="second-row">
-    <div class="applications">
-      <div class="appstore">
-        <img src="" alt="app-store" />
-        <div class="app-content">
-          <p>Download on the <br />App Store</p>
+          <div class="div-2">
+            <h3>Our support</h3>
+            <ul>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">FAQ’s</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="google-play">
-        <img src="" alt="google-play" />
-        <div class="app-content">
-          <p>GET IT ON<br>Google Play</p>
+      <div class="second-row">
+        <div class="applications">
+          <div class="appstore">
+            <img src="images/apple_831329.png" alt="app-store" />
+            <div class="app-content">
+              <p>Download on the <br />App Store</p>
+            </div>
+          </div>
+
+          <div class="google-play">
+            <img src="images/google-play_2504916.png" alt="google-play" />
+            <div class="app-content">
+              <p>GET IT ON<br />Google Play</p>
+            </div>
+          </div>
+
+          <div class="appgallery">
+            <img src="images/menu_4518101.png" alt="app-gallery" />
+            <div class="app-content">
+              <p>Explore it on<br />AppGallery</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="icons">
+          <div class="customer-icons">
+            <h3>For customers</h3>
+            <!-- icons here -->
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-tiktok"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+          <div class="partner-icons">
+            <h3>For partners</h3>
+            <!-- icons here -->
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
+            <ion-icon name="call-outline"></ion-icon>
+            <ion-icon name="navigate-outline"></ion-icon>
+          </div>
         </div>
       </div>
 
-      <div class="appgallery">
-        <img src="" alt="app-gallery" />
-        <div class="app-content">
-          <p>Explore it on<br />AppGallery</p>
+      <div class="third-row">
+        <p>&#64;2025 BeePlus — All rights reserved.</p>
+        <div class="third-row-links">
+          <a href="">Privacy policy</a>
+          <a href="">Terms of service</a>
         </div>
       </div>
-    </div>
 
-    <div class="icons">
-      <div class="customer-icons">
-        <h3>For customers</h3>
-        <!-- icons here -->
+      <div class="fourth-row">
+        <div class="fourth-row-img">
+          <img src="images/logo-dark.png" alt="BeeClub logo" />
+        </div>
+
+        <h2>BeeClub</h2>
       </div>
-      <div class="partner-icons">
-        <h3>For partners</h3>
-        <!-- icons here -->
-      </div>
-    </div>
-  </div> 
+    </section>
 
-  <div class="third-row">
-    <p>&#64;2025 BeePlus — All rights reserved.</p>
-    <div class="third-row-links">
-      <a href="">Privacy policy</a>
-      <a href="">Terms of service</a>
-    </div>
-  </div>
-
-  <div class="fourth-row">
-    <img src="" alt="BeeClub logo" />
-    <h2>BeeClub</h2>
-  </div>
-</section>
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
 </html>
