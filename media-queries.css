@@ -1,31 +1,254 @@
+@media (max-width: 63rem) {
+  html {
+    font-size: 80%;
+  }
 
-@media(max-width:63rem){
-    html{
-        font-size:80%;
-    }
+  .hero-img img {
+    max-width: 300px;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .blob-1 {
+    top: 200px;
+    left: 30px;
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .blob-2 {
+    max-width: 150px;
+    height: 150px;
+    right: 10px;
+    top: 100px;
+  }
+
+  /* BENEFTS */
+  .benefits-center img {
+    max-width: 250px;
+    height: 400px;
+  }
+.fourth-row h2 {
+    font-size: 10rem;
+  }
+
+
 }
 
+@media (max-width: 50rem) {
+  html {
+    font-size: 70%;
+  }
 
-@media(max-width:50rem){
+  /* NAV */
+  .middle-section,
+  .right-section {
+    display: none;
+  }
 
-html{
-    font-size:70%;
+  .nav.left-section {
+    flex: 1;
+  }
+
+  /* Humberger menu icon */
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #eaad07;
+  }
+
+  .hero {
+    flex-direction: column;
+    /* text-align: center; */
+    padding-inline: 2rem;
+  }
+  .hero-left-section {
+    align-items: start;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  .h1-blob {
+    top: 12%;
+    left: 45%;
+    padding: 0.5rem;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .hero-img img {
+    max-width: 300px;
+  }
+
+  .blob-1 {
+    top: 250px;
+    left: 5px;
+    max-width: 150px;
+    height: 100px;
+    padding: 0.2rem;
+  }
+
+  .blob-2 {
+    max-width: 150px;
+    height: 160px;
+    right: -30px;
+    top: 50px;
+    padding: 0.3rem;
+  }
+
+  /* FEATURESSECTION */
+  .video-details {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .features .details {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .featues.download-section {
+    margin-top: 1rem;
+  }
+
+  .features .big-text {
+    font-size: 3rem;
+  }
+
+  .features-video {
+    height: 18rem;
+  }
+
+  /* SERVICE */
+
+  .service-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .service-left {
+    align-items: center;
+    padding-inline: 1rem;
+  }
+
+  .form{
+    width: 90%;
+  }
+  .form-item {
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .service-right img {
+    margin: 0 auto;
+  }
+
+  /* BENEFITS */
+  .benefits-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    position: static;
+    width:90%;
+  }
+  .benefits-left,
+  .benefits-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .card {
+    position: static;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .card i {
+    font-size: 1.8rem;
+  }
+
+  .yellow-ring,
+  .yellow-ring.outer {
+    display: none; 
+  }
+
+  .benefits-center img {
+    max-width: 250px;
+    margin-bottom: 1rem;
+    display: none;
+  }
+
+  /* TESTOMONAL */
+  .testimonial-p {
+    font-size: 2rem;
+  }
+  /* FAQ SECTION */
+
+  .faq-section {
+    grid-template-columns: 1fr;
+  }
+  .faq-left {
+    text-align: center;
+  }
+
+  .faq-left-p {
+    text-align: center;
+  }
+
+  /* CTA SECTION */
+  .cta-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  /* FOOTER */
+  .first-row {
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+  }
+  .second-row,
+  .third-row {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+  }
+ 
+  .fourth-row h2 {
+    font-size: 8rem;
+  }
+
+  .fourth-row-img img {
+    width: 60%;
+  }
 }
 
+@media (max-width: 36rem) {
+  html {
+    font-size: 60%;
+  }
 
-}
+  .fourth-row h2 {
+    font-size: 6rem;
+  }
 
-
-
-
-
-
-
-
-
-
-@media(max-width:36rem){
-    html{
-        font-size: 60%;
-    }
 }
