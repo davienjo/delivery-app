@@ -126,13 +126,18 @@ window.addEventListener("load", () => {
 
     // ======================
     // BENEFITS SECTION
-    const benefitsTl = gsap.timeline({
-      scrollTrigger: { trigger: ".benefits", start: "top 80%", end:"top 20%", toggleActions: "play none none reverse" }
-    });
-    benefitsTl.from(".benefits-heading", { y:-50, opacity:0, duration:1, ease:"power2.out" })
-      .from(".benefits-h2", { y:50, opacity:0, duration:1, ease:"power2.out" })
-      .from(".benefits-center", { scale:0.4, opacity:0, duration:1, ease:"power2.out" })
-      .from(".yellow-ring", { rotation:360, scale:0, opacity:0, duration:1, stagger:0.2, ease:"power2.out" }, "-=0.8");
+  const benefitsTl = gsap.timeline({
+  scrollTrigger: { trigger: ".benefits", start: "top 80%", end: "top 20%", toggleActions: "play none none reverse",}
+});
+
+benefitsTl
+  .from(".benefits-heading", { y:-50, opacity:0, duration:1, ease:"power2.out" })
+  .from(".benefits-h2", { y:50, opacity:0, duration:1, ease:"power2.out" }, "-=0.5")
+  .from(".benefits-center", { scale:0.4, opacity:0, duration:1, ease:"power2.out" }, "-=0.5")
+  .from(".yellow-ring", { rotation:360, scale:0, opacity:0, duration:1, ease:"power2.out" }, "-=0.5")
+  .from(".yellow-ring-outer", { rotation:-360, scale:0, opacity:0, duration:1.2, ease:"power2.out" }, "-=0.8");
+
+
 
     // ======================
     // TESTIMONIALS SECTION
