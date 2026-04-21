@@ -20,11 +20,11 @@ BeePlus Delivery App is a visually engaging web application inspired by award-wi
 [View Live Demo](https://davienjo.github.io/delivery-app/)
 
 ## Screenshots
-![Homepage Screenshot](homepage.png)  
-![Animation Example Screenshot](animation.png)  
-![Mobile View Screenshot](mobile.png)  
+![Homepage Screenshot](images/home.png)  
+ 
+![Mobile View Screenshot](images/fullsize%20screnshot.png)  
 
-> *(Screenshots to be added later)*
+
 
 ## Author
 David Thairu

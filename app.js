@@ -25,23 +25,23 @@
   const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
 
   //  Slide screenshots out
-  tl.to(".screenshot.desktop", {
-    y: "-110%",
-    opacity: 0,
-    duration: 2,
-  })
-  .to(
-    ".screenshot.mobile",
-    {
-      y: "110%",
-      opacity: 0,
-      duration: 2,
-    },
-    "<"
-  )
+  // tl.to(".screenshot.desktop", {
+  //   y: "-110%",
+  //   opacity: 0,
+  //   duration: 2,
+  // })
+  // .to(
+  //   ".screenshot.mobile",
+  //   {
+  //     y: "110%",
+  //     opacity: 0,
+  //     duration: 2,
+  //   },
+  //   "<"
+  // )
 
   // Fade out intro background
-  .to(".intro-animation", {
+  tl.to(".intro-animation", {
     opacity: 0,
     duration: 0.5,
     onComplete: () => {
