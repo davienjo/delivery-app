@@ -187,10 +187,7 @@
     font-size: 1.8rem;
   }
 
-  /* .yellow-ring,
-  .yellow-ring.outer {
-    display: none; 
-  } */
+ 
 
   .benefits-center img {
     max-width: 250px;
@@ -220,6 +217,11 @@
     flex-direction: column;
     text-align: center;
     padding: 3rem 2rem;
+  }
+
+  .cta-download-section{
+    display: flex;
+    justify-content: center;
   }
 
   /* FOOTER */
