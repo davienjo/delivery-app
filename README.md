@@ -22,9 +22,6 @@ BeePlus Delivery App is a visually engaging web application inspired by award-wi
 ## Screenshots
 ![Homepage Screenshot](images/home.png) 
 
-Mobile view
- 
-![Mobile View Screenshot](images/mobile%20scren%20shot.png)  
 
 
 
