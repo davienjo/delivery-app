@@ -18,127 +18,125 @@
     <link rel="stylesheet" href="media-queries.css" />
     <title>Delivery app</title>
   </head>
+
   <body>
-    <!-- INTRO ANIMATION SECTION -->
-    <!-- <div class="intro-animation">
-      <div class="screenshots">
-        <img
-          src="images/desktop-screnshot.png"
-          alt="Desktop Screenshot"
-          class="screenshot desktop"
-        />
-        <img
-          src="images/mobile scren shot.png"
-          alt="Mobile Screenshot"
-          class="screenshot mobile"
-        />
-      </div>
-    </div> -->
-    <!-- intro animation ends -->
-    <!-- CIRCLE TRANSITION -->
-    <div class="circle-transition">
-      <div class="circle-bg"></div>
+    
+  <!-- NAV section Starts here -->
+      <nav class="nav">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <div class="left-section">
+      <img src="images/logo-dark.png" alt="BeeClub" width="40" height="40" />
+      <span>BeeClub</span>
     </div>
 
-    <header>
-      <!-- NAV section Starts here -->
-      <nav class="nav">
-        <div class="left-section">
-          <img
-            class="phone-img"
-            src="images/logo-dark.png"
-            alt="Bee club"
-          />BeeClub
-        </div>
+    <!-- Links -->
+    <ul class="middle-section">
+      <li><a href="">For Customers</a></li>
+      <li><a href="">For Couriers</a></li>
+      <li><a href="">About</a></li>
+    </ul>
 
-        <ul class="middle-section">
-          <li><a href="">For Customers</a></li>
-          <li><a href="">For couriers</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-        <div class="right-section">
-          <img src="images/united_kingdom_round_icon_64.png" alt="English-UK" />
+    <!-- Right side -->
+    <div class="right-section">
+      <img src="images/united_kingdom_round_icon_64.png" alt="English" width="20" height="20" loading="lazy" />
+      <p>English<br />(ENG)</p>
+      <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+      <div class="nav-cta">
+        <a href="" class="nav-cta-btn">
+          Download app now
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+      </div>
+    </div>
 
-          <p>English<br />(ENG)</p>
-          <i class="fa-solid fa-angle-down"></i>
+    <!-- Hamburger — mobile only -->
+    <ion-icon name="menu-outline" class="menu-icon" aria-label="Open menu"></ion-icon>
 
-          <div class="download-section">
-            <a href="">Download app now</a>
-            <ion-icon
-              class="nav-forward"
-              name="arrow-forward-outline"
-            ></ion-icon>
-          </div>
-        </div>
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-      </nav>
-    </header>
+  </div>
+</nav>
     <!-- Nav section ends here -->
 
     <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero-left-section">
-        <div class="hero-text">
-          <h1>JEDDAH'S<br />FASTEST<br />DELIVERY APP</h1>
-          <p>
-            Book delivery in 30 seconds. Track in real-time. Pay how you<br />
-            wnat. Documents, furniture, packages- we deliver<br />
-            everything across Jeddah.
-          </p>
-        </div>
+    
+<section class="hero">
 
-        <div class="download-section">
-          <a href="">get 20% off now(3 days left)</a>
-          <ion-icon class="nav-forward" name="arrow-forward-outline"></ion-icon>
-          <p class="download-section-p">Learn More</p>
-        </div>
+  <!-- LEFT -->
+  <div class="hero-left">
+    <div class="hero-text">
+      <h1>JEDDAH'S<br />FASTEST<br />DELIVERY APP</h1>
+      <p>Book delivery in 30 seconds. Track in real-time.
+         Documents, furniture, packages — we deliver everything across Jeddah.</p>
+    </div>
 
-        <!-- social users blob -->
-        <div class="h1-blob">
-          <div><img src="images/host.png" alt="" /></div>
-          <div>
-            <p>50K+</p>
-            <p>Total users</p>
-          </div>
-        </div>
+    <div class="hero-cta">
+      <a href="" class="hero-cta-btn">Get 20% off now (3 days left)</a>
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+      <span class="hero-cta-learn">Learn More</span>
+    </div>
 
-        <div class="stats">
-          <p><span class="numbers">12.5K+</span><br />User Registered</p>
-          <p><span class="numbers">10+</span><br />Jeddah Zones</p>
-          <p><span class="numbers">4.9</span><br />App Rating</p>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number">12.5K+</span>
+        <span>Users Registered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">10+</span>
+        <span>Jeddah Zones</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">4.9</span>
+        <span>App Rating</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT — image + blobs all inside one relative container -->
+  <div class="hero-right">
+    <div class="hero-img-wrapper">
+
+      <img
+        src="images/phone-with-delivery-app.webp"
+        alt="Phone showing the BeeClub delivery app"
+        width="350"
+        height="600"
+        fetchpriority="high"
+        decoding="async"
+      />
+
+      <!-- Pill floating above image — anchors to wrapper -->
+      <div class="hero-pill">
+        <img src="images/host.png" alt="" width="30" height="30" loading="lazy" />
+        <div>
+          <p class="hero-pill-number">50K+</p>
+          <p class="hero-pill-label">Total users</p>
         </div>
       </div>
 
-      <!-- <div class="hero-right-section"> -->
-      <div class="hero-img">
-        <img
-          src="images/a_phone_with_a_delivery_app_showing (1).jpeg"
-          alt="delivery-mockup"
-        />
-        <div class="blob-1">
-          <i class="fa-solid fa-people-group"></i>
-
-          <div class="blob-1-text">
-            <p>50K+</p>
-            <p>Monthly Orders</p>
-          </div>
-        </div>
-
-        <div class="blob-2">
-          <div class="blob2-icons">
-            <img src="images/apple_831329.png" alt="" />
-            <img src="images/google-play_2504916.png" alt="" />
-            <img src="images/menu_4518101.png" alt="" />
-          </div>
-          <h2>GET THE APP</h2>
-          <p class="instructions">
-            Download our app & enjoy<br />our services now.
-          </p>
-          <p class="action">DOWNLOAD NOW</p>
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </div>
+      <!-- Stats blob — left of image -->
+      <div class="hero-blob-orders">
+        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+        <p class="blob-number">50K+</p>
+        <p class="blob-label">Monthly Orders</p>
       </div>
-    </section>
+
+      <!-- App download blob — right of image -->
+      <div class="hero-blob-app">
+        <div class="blob-app-icons">
+          <img src="images/apple_831329.png" alt="App Store" width="24" height="24" loading="lazy" />
+          <img src="images/google-play_2504916.png" alt="Google Play" width="24" height="24" loading="lazy" />
+          <img src="images/menu_4518101.png" alt="App Gallery" width="24" height="24" loading="lazy" />
+        </div>
+        <h2 class="blob-app-title">GET THE APP</h2>
+        <p class="blob-app-desc">Download our app & enjoy our services now.</p>
+        <p class="blob-app-action">DOWNLOAD NOW</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
     <!-- Hero section ends here -->
 
@@ -149,28 +147,34 @@
       <p class="big-text">
         INSTANT DELIVERY SOLUTION<br />SPECIAL FOR YOU IN JEDDAH
       </p>
-      <video src="images/0_Woman_Packing_3840x2160.mp4" controls loop muted>
+      <video src="images/0_Woman_Packing.webm" controls loop muted>
         Woman packing for delivery
       </video>
       <div class="video-details">
         <p class="details">
           BeeClub delivers anything across Jeddah.Book in the app, track your
-          order, get it delivered today.<br />We work 24/7. Price based on
+          order, get it delivered today.We work 24/7. Price based on
           loading/unloading time. Drivers are verified.
         </p>
-        <div class="download-section">
-          <a href="">Explore more our features</a>
-           <ion-icon class="nav-forward" name="arrow-forward-outline"></ion-icon>
+        <div class="features-cta">
+          <a href="" class="features-cta-btn">Explore more our features
+           <ion-icon name="arrow-forward-outline"></ion-icon>
+           </a>
         </div>
+
+
       </div>
     </section>
     <!-- features section ends here -->
 
     <!-- SERVICES SECTION -->
 
-    <section class="service-section">
+    <section class="services">
+      <p class="service-heading">What is our services</p>
+
+       <div class="service-section">
       <div class="service-left">
-        <p class="service-heading">What is our services</p>
+        
         <h2>Choose your delivery<br />Service type</h2>
 
         <div class="form">
@@ -219,8 +223,9 @@
         </div>
       </div>
       <div class="service-right">
-        <img src="images/iphone-3.png" alt="" />
+        <img src="images/iphone-3.webp" alt="" />
         <!-- to add background later -->
+      </div>
       </div>
     </section>
 
@@ -234,9 +239,8 @@
 
       <div class="benefits-wrapper">
         <div class="benefits-center">
-          <img src="images/delivery-app2.jpg" alt="" />
-          <div class="yellow-ring"></div>
-          <div class="yellow-ring-outer"></div>
+          <img src="images/delivery-app2.webp" alt="" />
+          
         </div>
 
         <div class="benefits-section">
@@ -309,9 +313,9 @@
 
 
 
-    <div class="download-section">
-      <a href="">Explore More our features</a>
-       <ion-icon class="nav-forward" name="arrow-forward-outline"></ion-icon>
+    <div class="benefits-cta">
+      <a href="" class="benefits-cta-btn">Explore More our features
+       <ion-icon name="arrow-forward-outline"></ion-icon></a>
     </div>
 
     <!-- benefits section ends here -->
@@ -456,9 +460,9 @@
       </div>
       <div class="cta-right">
         <!-- <img src="images/ramadan-phones-14-pro-max-front-side.jpg" alt="" /> -->
-        <img src="images/iphone-1.png" alt="" />
-        <img src="images/iphone-3.png" alt="" />
-        <img src="images/iphone-4.png" alt="" />
+        <img src="images/iphone-1.webp" alt="" />
+        <img src="images/iphone-3.webp" alt="" />
+        <img src="images/iphone-4.webp" alt="" />
       </div>
     </section>
 
@@ -568,6 +572,10 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+
+
+
+
 
     <script src="app.js"></script>
   </body>
